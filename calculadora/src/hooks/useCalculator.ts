@@ -5,10 +5,8 @@ export const useCalculator = () => {
   const [storedValue, setStoredValue] = useState<number | null>(null)
   const [operation, setOperation] = useState<string | null>(null)
   const [waitingForOperand, setWaitingForOperand] = useState(false)
-
   const MAX_DISPLAY_LENGTH = 9
   const MAX_VALUE = 999999999
-
   const inputDigit = (digit: string) => {
     if (display.length >= MAX_DISPLAY_LENGTH) return
     
@@ -19,7 +17,6 @@ export const useCalculator = () => {
       setDisplay(display === '0' ? digit : display + digit)
     }
   }
-
   const inputDot = () => {
     if (waitingForOperand) {
       setDisplay('0.')
@@ -33,7 +30,6 @@ export const useCalculator = () => {
       }
     }
   }
-
   const toggleSign = () => {
     if (display === '0') return
     
@@ -47,7 +43,6 @@ export const useCalculator = () => {
       }
     }
   }
-
   const clear = () => {
     setDisplay('0')
     setStoredValue(null)
@@ -83,7 +78,6 @@ export const useCalculator = () => {
 
   const inputEquals = () => {
     if (storedValue === null || operation === null) return
-    
     const inputValue = parseFloat(display)
     const result = calculate(storedValue, inputValue, operation)
 
@@ -93,12 +87,10 @@ export const useCalculator = () => {
       const resultStr = result.toString()
       setDisplay(resultStr.length > MAX_DISPLAY_LENGTH ? 'ERROR' : resultStr)
     }
-
     setStoredValue(null)
     setOperation(null)
     setWaitingForOperand(true)
   }
-
   const calculate = (firstOperand: number, secondOperand: number, operation: string): number => {
     switch (operation) {
       case '+': return firstOperand + secondOperand
@@ -113,7 +105,6 @@ export const useCalculator = () => {
       default: return secondOperand
     }
   }
-
   return {
     display,
     inputDigit,

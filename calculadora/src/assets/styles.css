@@ -10,6 +10,7 @@ body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
 /* estilos */
 .calculator {
   background: linear-gradient(135deg, #9c7cc9, #b08fd6);
@@ -34,6 +35,7 @@ body {
   filter: drop-shadow(0 0 8px rgba(255, 215, 0, 0.8));
   z-index: 1;
 }
+
 
 .calculator::before {
   top: -20px;
@@ -71,6 +73,7 @@ body {
   gap: 15px !important;
 }
 
+
 /* Estilos para botones */
 .button {
   border: none;
@@ -90,7 +93,6 @@ body {
   transform: translateY(-3px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
 }
-
 .button:active {
   transform: translateY(0);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -128,7 +130,6 @@ body {
 .button-special:hover {
   background: linear-gradient(145deg, #ffb84d, #ffa500);
 }
-
 /* Boton de igual  */
 .button-equals {
   background: linear-gradient(145deg, #ffcc66, #ffb84d);
@@ -138,6 +139,7 @@ body {
   width: 100%;
   margin-top: 10px;
 }
+
 
 .button-equals:hover {
   background: linear-gradient(145deg, #ffb84d, #ffa500);
