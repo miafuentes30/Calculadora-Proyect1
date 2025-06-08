@@ -5,14 +5,14 @@ Esta calculadora esta desarrollada con React + TypeScript + Vite.
 
 ## Funcionalidades
 
-- Display con máximo de 9 caracteres
-- Teclado numérico interactivo con botones HTML.
+- Display de 9 caracteres
+- Teclado hecho con HTML
 - Operaciones:
   - Suma, Resta, Multiplicación, División
   - Punto decimal
   - Módulo %
   - Cambio de signo +/-
-- Lógica controlada en hooks/useCalculator
+- Logica controlada en hooks/useCalculator
 - Manejo de errores para resultados negativos o mayores a 999999999
 
 
@@ -27,10 +27,10 @@ Esta calculadora esta desarrollada con React + TypeScript + Vite.
 - pnpm como package manager
 
 ## Instalación
-cd calculadora
-pnpm install
-pnpm test       # Pruebas
-pnpm storybook  # Stories
-pnpm lint       # Manejo de errores
-pnpm dev        # Ejecución del proyecto
+- cd calculadora
+- pnpm install
+- pnpm test       # Pruebas
+- pnpm storybook  # Stories
+- pnpm lint       # Manejo de errores
+- pnpm dev        # Ejecución del proyecto
 
